@@ -21,6 +21,9 @@ imported_ok
         Named_Note_Octave
     );
 
+ok is_BPM(120), 'is BPM';
+is 120, assert_BPM(120), 'assert BPM';
+
 ok is_Octave(4), 'is Octave';
 is 4, assert_Octave(4), 'assert Octave';
 
