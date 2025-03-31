@@ -29,7 +29,7 @@ declare BPM,
     as PositiveNum;
 
 declare Octave,
-    as PositiveOrZeroNum; # the zero-octave means "use pitch-class"
+    as PositiveOrZeroNum; # the zero-octave means "use pitch-class" in some module...
 
 declare Key,
     as StrMatch[ qr/^[A-G][#b]?$/ ];
