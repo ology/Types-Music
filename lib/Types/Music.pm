@@ -201,6 +201,6 @@ L</Mode>, otherwise an exception is thrown.
 
 =head1 SEE ALSO
 
-L<Exporter::Tiny>
+L<Type::Tiny>
 
 =cut
