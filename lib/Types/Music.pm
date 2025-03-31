@@ -137,11 +137,11 @@ A numeric octave.
 
 =head2 Key
 
-A key note, like C<C>, C<C#>, C<Bb>, etc. (Same as a C<Named_Note>).
+A key note, like C<C>, C<C#>, C<Bb>, etc.
 
 =head2 Named_Note
 
-A named note, like C<C>, C<C#>, C<Bb>, etc. (Same as a C<Key>).
+A named note, like C<C>, C<C#>, C<Cs>, C<Bb>, C<Bf>, etc.
 
 =head2 Named_Note_Octave
 
