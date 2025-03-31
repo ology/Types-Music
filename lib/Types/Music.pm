@@ -14,13 +14,17 @@ use Types::Standard qw(StrMatch);
 
 use Type::Library 2.000000
     -extends => [qw(
+        Types::Common::Numeric
         Types::Common::String
     )],
     -declare => qw(
+        Octave
         Named_Note_Octave
     );
 use Type::Utils 2.000000 -all;
-use Readonly;
+
+declare Octave,
+    as PositiveNum;
 
 declare Named_Note_Octave,
     as StrMatch[ qr/^[A-G][#b]?\d$/ ];
@@ -78,11 +82,24 @@ Exports everything.
 
 =head1 TYPES
 
+=head2 Octave
+
+A numeric octave.
+
 =head2 Named_Note_Octave
 
 A named note with octave, like C<C4>, C<C#5>, C<Bb2>, etc.
 
 =head1 FUNCTIONS
+
+=head2 is_Octave
+
+Returns true if the passed value can be used as an L</Octave>.
+
+=head2 assert_Octave
+
+Returns the passed value if and only if it can be used as an
+L</Octave>, otherwise an exception is thrown.
 
 =head2 is_Named_Note_Octave
 
