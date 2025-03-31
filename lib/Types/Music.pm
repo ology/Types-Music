@@ -24,7 +24,7 @@ use Type::Library 2.000000
 use Type::Utils 2.000000 -all;
 
 declare Octave,
-    as PositiveNum;
+    as PositiveOrZeroNum;
 
 declare Named_Note_Octave,
     as StrMatch[ qr/^[A-G][#b]?\d$/ ];
