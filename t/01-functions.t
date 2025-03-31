@@ -21,20 +21,20 @@ imported_ok
         Named_Note_Octave
     );
 
-ok is_BPM(120), 'is BPM';
-is 120, assert_BPM(120), 'assert BPM';
+ok is_BPM(120), 'is_BPM';
+is 120, assert_BPM(120), 'assert_BPM';
 
-ok is_Octave(4), 'is Octave';
-is 4, assert_Octave(4), 'assert Octave';
+ok is_Octave(4), 'is_Octave';
+is 4, assert_Octave(4), 'assert_Octave';
 
-ok is_Key('C#'), 'is Key';
-is 'C#', assert_Key('C#'), 'assert Key';
+ok is_Key('C#'), 'is_Key';
+is 'C#', assert_Key('C#'), 'assert_Key';
 
-ok is_Named_Note('Bb'), 'is Named_Note';
-is 'Bb', assert_Named_Note('Bb'), 'assert Named_Note';
+ok is_Named_Note('Bb'), 'is_Named_Note';
+is 'Bb', assert_Named_Note('Bb'), 'assert_Named_Note';
 
-ok is_Named_Note_Octave('C4'), 'is Named_Note_Octave';
-is 'C4', assert_Named_Note_Octave('C4'), 'assert Named_Note_Octave';
+ok is_Named_Note_Octave('C4'), 'is_Named_Note_Octave';
+is 'C4', assert_Named_Note_Octave('C4'), 'assert_Named_Note_Octave';
 
-ok is_Mode('ionian'), 'is Mode';
-is 'ionian', assert_Mode('ionian'), 'assert Mode';
+ok is_Mode('ionian'), 'is_Mode';
+is 'ionian', assert_Mode('ionian'), 'assert_Mode';
