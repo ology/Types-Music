@@ -35,10 +35,10 @@ declare Key,
     as StrMatch[ qr/^[A-G][#b]?$/ ];
 
 declare Named_Note,
-    as StrMatch[ qr/^[A-G][#b]?$/ ];
+    as StrMatch[ qr/^[A-G][#bsf]?$/ ];
 
 declare Named_Note_Octave,
-    as StrMatch[ qr/^[A-G][#b]?\d$/ ];
+    as StrMatch[ qr/^[A-G][#bsf]?\d$/ ];
 
 1;
 
