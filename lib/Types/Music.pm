@@ -17,12 +17,16 @@ use Type::Library 2.000000
         Types::Common::Numeric
     )],
     -declare => qw(
+        BPM
         Octave
         Key
         Named_Note
         Named_Note_Octave
     );
 use Type::Utils 2.000000 -all;
+
+declare BPM,
+    as PositiveNum;
 
 declare Octave,
     as PositiveOrZeroNum;
