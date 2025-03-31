@@ -1,4 +1,6 @@
 Revision history for Types-Music:
 
 {{$NEXT}}
+
+0.0100 2025-03-31 11:25:25
   - Port from Types::MIDI.
