@@ -127,27 +127,30 @@ Exports everything.
 
 =head2 BPM
 
-A positive integer beats per minute value.
+A positive integer beats per minute.
 
 =head2 Bars
 
-A positive integer number of bars value.
+A positive integer number of bars (or measures).
 
 =head2 Beats
 
-A positive integer number of beats value.
+A positive integer number of beats per measure.
 
 =head2 Divisions
 
-A positive integer number of divisions value.
+A positive integer number of divisions.
 
 =head2 Signature
 
-A string representing a time signature.
+A string representing a time signature, like C<3/4>. The B<Signature>
+is a fraction with B<Beats> as numerator and B<Divisions> as
+denominator.
 
 =head2 Octave
 
-A numeric octave.
+A numeric octave. Usually C<1> to C<6>. Higher and it's not really
+audible. Zero C<0> is special cased to allow specific module behavior.
 
 =head2 Key
 
@@ -155,15 +158,17 @@ A key note, like C<C>, C<C#>, C<Bb>, etc.
 
 =head2 Named_Note
 
-A named note, like C<C>, C<C#>, C<Cs>, C<Bb>, C<Bf>, etc.
+A named note, in either tradional or MIDI-Perl notation, like C<C>,
+C<C#>, C<Cs>, C<Bb>, C<Bf>, etc.
 
 =head2 Named_Note_Octave
 
-A named note with octave, like C<C4>, C<C#5>, C<Bb2>, etc.
+A named note with octave, like C<C4>, C<C#5>, C<Cs5>, C<Bb2>, C<Bf2>,
+etc.
 
 =head2 Mode
 
-A mode name. Known modes:
+A mode name. The known modes are:
 
     ionian / major
     dorian
