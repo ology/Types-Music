@@ -131,6 +131,22 @@ Exports everything.
 
 A positive integer beats per minute value.
 
+=head2 Bars
+
+A positive integer number of bars value.
+
+=head2 Beats
+
+A positive integer number of beats value.
+
+=head2 Divisions
+
+A positive integer number of divisions value.
+
+=head2 Signature
+
+A string representing a time signature.
+
 =head2 Octave
 
 A numeric octave.
@@ -169,6 +185,46 @@ Returns true if the passed value can be used as a L</BPM>.
 
 Returns the passed value if and only if it can be used as a
 L</BPM>, otherwise an exception is thrown.
+
+=head2 is_Bars
+
+Returns true if the passed value can be used as the number of
+L</Bars>.
+
+=head2 assert_Bars
+
+Returns the passed value if and only if it can be used as the number
+of L</Bars>, otherwise an exception is thrown.
+
+=head2 is_Beats
+
+Returns true if the passed value can be used as the number of
+L</Beats>.
+
+=head2 assert_Beats
+
+Returns the passed value if and only if it can be used as the number
+of L</Beats>, otherwise an exception is thrown.
+
+=head2 is_Divisions
+
+Returns true if the passed value can be used as the number of
+L</Divisions>.
+
+=head2 assert_Divisions
+
+Returns the passed value if and only if it can be used as the number
+of L</Divisions>, otherwise an exception is thrown.
+
+=head2 is_Signature
+
+Returns true if the passed value can be used as a time signature
+L</Signature>.
+
+=head2 assert_Signature
+
+Returns the passed value if and only if it can be used as a time
+signature L</Signature>, otherwise an exception is thrown.
 
 =head2 is_Octave
 
