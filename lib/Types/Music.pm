@@ -19,6 +19,7 @@ use Type::Library 2.000000
     -declare => qw(
         Octave
         Key
+        Named_Note
         Named_Note_Octave
     );
 use Type::Utils 2.000000 -all;
@@ -27,6 +28,9 @@ declare Octave,
     as PositiveOrZeroNum;
 
 declare Key,
+    as StrMatch[ qr/^[A-G][#b]?$/ ];
+
+declare Named_Note,
     as StrMatch[ qr/^[A-G][#b]?$/ ];
 
 declare Named_Note_Octave,
