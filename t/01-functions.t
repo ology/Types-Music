@@ -42,8 +42,8 @@ is '3/4', assert_Signature('3/4'), 'assert_Signature';
 ok is_Key('C#'), 'is_Key';
 is 'C#', assert_Key('C#'), 'assert_Key';
 
-ok is_Named_Note('Bb'), 'is_Named_Note';
-is 'Bb', assert_Named_Note('Bb'), 'assert_Named_Note';
+ok is_Named_Note('Bf'), 'is_Named_Note';
+is 'Bf', assert_Named_Note('Bf'), 'assert_Named_Note';
 
 ok is_Named_Note_Octave('C4'), 'is_Named_Note_Octave';
 is 'C4', assert_Named_Note_Octave('C4'), 'assert_Named_Note_Octave';
