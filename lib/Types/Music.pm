@@ -19,6 +19,10 @@ use Type::Library 2.000000
     )],
     -declare => qw(
         BPM
+        Bars
+        Beats
+        Divisions
+        Signature
         Octave
         Key
         Named_Note
@@ -32,6 +36,18 @@ use MIDI::Util qw(midi_dump);
 
 declare BPM,
     as PositiveNum;
+
+declare Bars,
+    as PositiveNum;
+
+declare Beats,
+    as PositiveNum;
+
+declare Divisions,
+    as PositiveNum;
+
+declare Signature,
+    as StrMatch[ qr/^[1-9]\d?\/[1-9]\d?$/ ];
 
 declare Octave,
     as PositiveOrZeroNum; # the zero-octave means "use pitch-class" in some module...
