@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 use Test2::V0;
-plan 10;
+plan 14;
 
 use Types::Music;
 
@@ -35,3 +35,6 @@ is 'Bb', assert_Named_Note('Bb'), 'assert Named_Note';
 
 ok is_Named_Note_Octave('C4'), 'is Named_Note_Octave';
 is 'C4', assert_Named_Note_Octave('C4'), 'assert Named_Note_Octave';
+
+ok is_Mode('ionian'), 'is Mode';
+is 'ionian', assert_Mode('ionian'), 'assert Mode';
