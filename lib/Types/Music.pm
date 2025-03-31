@@ -25,7 +25,10 @@ use Type::Library 2.000000
         Named_Note_Octave
         Mode
     );
+
 use Type::Utils 2.000000 -all;
+
+use MIDI::Util qw(midi_dump);
 
 declare BPM,
     as PositiveNum;
@@ -108,15 +111,48 @@ Exports everything.
 
 =head1 TYPES
 
+=head2 BPM
+
+A positive integer beats per minute value.
+
 =head2 Octave
 
 A numeric octave.
+
+=head2 Key
+
+A key note, like C<C>, C<C#>, C<Bb>, etc. (Same as a C<Named_Note>).
+
+=head2 Named_Note
+
+A named note, like C<C>, C<C#>, C<Bb>, etc. (Same as a C<Key>).
 
 =head2 Named_Note_Octave
 
 A named note with octave, like C<C4>, C<C#5>, C<Bb2>, etc.
 
+=head2 Mode
+
+A mode name. Known modes:
+
+    ionian / major
+    dorian
+    phrygian
+    lydian
+    mixolydian
+    aeolian / minor
+    locrian
+
 =head1 FUNCTIONS
+
+=head2 is_BPM
+
+Returns true if the passed value can be used as a L</BPM>.
+
+=head2 assert_BPM
+
+Returns the passed value if and only if it can be used as a
+L</BPM>, otherwise an exception is thrown.
 
 =head2 is_Octave
 
@@ -127,6 +163,24 @@ Returns true if the passed value can be used as an L</Octave>.
 Returns the passed value if and only if it can be used as an
 L</Octave>, otherwise an exception is thrown.
 
+=head2 is_Key
+
+Returns true if the passed value can be used as a L</Key>.
+
+=head2 assert_Key
+
+Returns the passed value if and only if it can be used as a
+L</Key>, otherwise an exception is thrown.
+
+=head2 is_Named_Note
+
+Returns true if the passed value can be used as a L</Named_Note>.
+
+=head2 assert_Named_Note
+
+Returns the passed value if and only if it can be used as a
+L</Named_Note>, otherwise an exception is thrown.
+
 =head2 is_Named_Note_Octave
 
 Returns true if the passed value can be used as a L</Named_Note_Octave>.
@@ -135,6 +189,15 @@ Returns true if the passed value can be used as a L</Named_Note_Octave>.
 
 Returns the passed value if and only if it can be used as a
 L</Named_Note_Octave>, otherwise an exception is thrown.
+
+=head2 is_Mode
+
+Returns true if the passed value can be used as a L</Mode>.
+
+=head2 assert_Mode
+
+Returns the passed value if and only if it can be used as a
+L</Mode>, otherwise an exception is thrown.
 
 =head1 SEE ALSO
 
