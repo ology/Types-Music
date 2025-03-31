@@ -4,7 +4,7 @@ package Types::Music;
 
 our $AUTHORITY = 'cpan:GENE';
 
-our $VERSION = '0.0103';
+our $VERSION = '0.0104';
 
 use 5.016;
 use strict;
