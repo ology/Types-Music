@@ -201,6 +201,8 @@ L</Mode>, otherwise an exception is thrown.
 
 =head1 SEE ALSO
 
+L<MIDI::Util>
+
 L<Type::Tiny>
 
 =cut
