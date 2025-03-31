@@ -32,8 +32,6 @@ use Type::Library 2.000000
 
 use Type::Utils 2.000000 -all;
 
-use MIDI::Util qw(midi_dump);
-
 declare BPM,
     as PositiveNum;
 
@@ -272,8 +270,6 @@ Returns the passed value if and only if it can be used as a
 L</Mode>, otherwise an exception is thrown.
 
 =head1 SEE ALSO
-
-L<MIDI::Util>
 
 L<Type::Tiny>
 
