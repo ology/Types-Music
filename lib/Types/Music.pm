@@ -50,7 +50,7 @@ declare Signature,
     as StrMatch[ qr/^[1-9]\d?\/[1-9]\d?$/ ];
 
 declare Octave,
-    as PositiveOrZeroNum; # the zero-octave means "use pitch-class" in some module...
+    as PositiveOrZeroNum; # the zero-octave means "use pitch-class" in some module of mine...
 
 declare Key,
     as StrMatch[ qr/^[A-G][#b]?$/ ];
