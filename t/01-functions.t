@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 use Test2::V0;
-plan 14;
+plan 22;
 
 use Types::Music;
 
@@ -24,8 +24,20 @@ imported_ok
 ok is_BPM(120), 'is_BPM';
 is 120, assert_BPM(120), 'assert_BPM';
 
+ok is_Bars(8), 'is_Bars';
+is 8, assert_Bars(8), 'assert_Bars';
+
+ok is_Beats(4), 'is_Beats';
+is 4, assert_Beats(4), 'assert_Beats';
+
+ok is_Divisions(4), 'is_Divisions';
+is 4, assert_Divisions(4), 'assert_Divisions';
+
 ok is_Octave(4), 'is_Octave';
 is 4, assert_Octave(4), 'assert_Octave';
+
+ok is_Signature('3/4'), 'is_Signature';
+is '3/4', assert_Signature('3/4'), 'assert_Signature';
 
 ok is_Key('C#'), 'is_Key';
 is 'C#', assert_Key('C#'), 'assert_Key';
