@@ -15,6 +15,7 @@ use Types::Standard qw(StrMatch);
 use Type::Library 2.000000
     -extends => [qw(
         Types::Common::Numeric
+        Types::Common::String
     )],
     -declare => qw(
         BPM
@@ -22,6 +23,7 @@ use Type::Library 2.000000
         Key
         Named_Note
         Named_Note_Octave
+        Mode
     );
 use Type::Utils 2.000000 -all;
 
@@ -39,6 +41,19 @@ declare Named_Note,
 
 declare Named_Note_Octave,
     as StrMatch[ qr/^[A-G][#bsf]?\d$/ ];
+
+my %modes;
+@modes{qw(
+    ionian major
+    dorian
+    phrygian
+    lydian
+    mixolydian
+    aeolian minor
+    locrian
+)} = undef;
+declare Mode,
+    as NonEmptyStr, where { exists $modes{$_} };
 
 1;
 
