@@ -15,16 +15,19 @@ use Types::Standard qw(StrMatch);
 use Type::Library 2.000000
     -extends => [qw(
         Types::Common::Numeric
-        Types::Common::String
     )],
     -declare => qw(
         Octave
+        Key
         Named_Note_Octave
     );
 use Type::Utils 2.000000 -all;
 
 declare Octave,
     as PositiveOrZeroNum;
+
+declare Key,
+    as StrMatch[ qr/^[A-G][#b]?$/ ];
 
 declare Named_Note_Octave,
     as StrMatch[ qr/^[A-G][#b]?\d$/ ];
