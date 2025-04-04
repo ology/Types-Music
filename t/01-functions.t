@@ -14,7 +14,6 @@ can_ok 'Types::Music', [
         Named_Note
         Named_Note_Octave
         Mode
-        
     )
 ], 'type functions';
 
